@@ -1,0 +1,73 @@
+$melon: rgb(244, 175, 171);
+$tea-rose: rgb(244, 203, 198);
+$lavender-blush: rgb(247, 237, 240);
+html {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h1, .sub-header {
+    text-align: center;
+}
+body {
+    background-color: $melon;
+}
+main {
+    background-color: $tea-rose;
+    margin: 2em;
+    padding: 3em;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+#input-section {
+    position: sticky;
+    top: 50px;
+    display: grid;
+    row-gap: 1.5rem;
+    justify-content: center;
+    align-content: center;
+    
+    background-color: $lavender-blush;
+    width: 20vw;
+    height: 10rem;
+    border-radius: 5px;
+}
+#notebook-page {
+    background-color: $lavender-blush;
+    width: 60vw;
+    height: auto;
+    min-height: 50vh;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    border-radius: 5px;
+    .binder-hole {
+        background-color: $tea-rose;
+        border-radius: 15px;
+        margin-left: 2rem;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    .list-item {
+        padding-left: 8vw;
+        font-family: "Indie Flower", cursive;
+        font-size: 1.2rem;
+        .due {
+            position: absolute;
+            right: 20vw;
+        }
+        .delete {
+            position: absolute;
+            font-size: 1.5rem;
+            right: 13vw;
+            &:hover {
+                cursor: pointer;
+                color:rgb(240, 68, 68);
+            }
+        }
+    }
+    hr {
+        border: none;
+        background-color: rgb(79, 150, 172);
+        width: 80%;
+        height: 2px;
+    }
+}
